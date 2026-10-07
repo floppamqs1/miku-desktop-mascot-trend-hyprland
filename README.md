@@ -44,7 +44,7 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 ```
 
 
-*Building and Running
+### Building and Running
 
  * Clone the repository and enter the directory:
    
@@ -53,14 +53,30 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
  ```
 ```bash
  cd miku-desktop-mascot-trend
-```
+  ```
+
+ * Also, you need add this on .config/hypr/config/windowrules.lua
+```bash
+  hl.window_rule({
+    match = { title = "^(Hatsune Miku)$" },
+    float = true,
+    border_size = 0,
+    no_shadow = true,
+    no_blur = true,
+    pin = true, -- Показывать на всех рабочих столах
+    opacity = 1,
+    no_initial_focus = true,
+    opacity = "1.0 1.0 override",
+    no_focus = true,
+  })
+  ```
 
  * Compile
-   ```bash
+```bash
    gcc main.c -o miku -lraylib -lX11 -lGL -lm -lpthread -ldl -lrt
    ```
  * Run the mascot:
-   ```bash
+```bash
    ./miku
   ```
 
@@ -68,6 +84,6 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 ### Note
 
 * Direct clicks on Miku are disabled. To close the mascot, run:
-  ```bash
+```bash
   pkill -9 -i miku
   ```

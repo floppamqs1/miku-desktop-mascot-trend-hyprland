@@ -14,11 +14,11 @@
 
 Маскот для рабочего стола Linux, написанный на чистом C с использованием библиотеки Raylib. Никакого Wallpaper Engine или Anima Engine не требуется.
 
-Совместимость
+### Совместимость
 
  * Форк 100% работает на: Hyprland
  
-Зависимости
+### Зависимости
 
 * Для Arch-подобных дистрибутивов:
 ```bash
@@ -33,23 +33,37 @@ sudo apt update
 sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 
 ```
-* Сборка и запуск
+### Сборка и запуск
 
- * Клонируйте репозиторий и перейдите в папку:
-  ```bash
+  * Клонируйте репозиторий и перейдите в папку:
+```bash
   git clone https://github.com/floppamqs1/miku-desktop-mascot-trend-hyprland.git
    ```
-   ```bash
+```bash
    cd miku-desktop-mascot-trend
    ```
-   * Скомпилируйте:
-   ```bash
+  * Скомпилируйте:
+```bash
    gcc main.c -o miku -lraylib -lX11 -lXext -lGL -lm -lpthread -ldl -lrt
    ```
+  * Так же, пропишите в .config/hypr/config/windowrules.lua следующее:
+```bash
+  hl.window_rule({
+    match = { title = "^(Hatsune Miku)$" },
+    float = true,
+    border_size = 0,
+    no_shadow = true,
+    no_blur = true,
+    pin = true, -- Показывать на всех рабочих столах
+    opacity = 1,
+    no_initial_focus = true,
+    opacity = "1.0 1.0 override",
+    no_focus = true,
+})
+```
 
-
- * Запустите маскота:
-  ```bash
+  * Запустите маскота:
+```bash
    ./miku
    ```
 
@@ -57,6 +71,6 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 ### Примечание
 
  * На Мику не работают клики. Чтобы её закрыть, выполните в терминале:
-  ```bash
+```bash
   pkill -9 -i miku
   ```
