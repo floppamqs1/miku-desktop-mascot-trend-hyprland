@@ -43,6 +43,11 @@ sudo apt update
 sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 ```
 
+* For Fedora-based distros:
+```bash
+  sudo dnf install gcc make raylib-devel libX11-devel libXext-devel
+  ```
+
 
 ### Building and Running
 
@@ -64,7 +69,6 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
     no_shadow = true,
     no_blur = true,
     pin = true,
-    opacity = 1,
     no_initial_focus = true,
     opacity = "1.0 1.0 override",
     no_focus = true,
