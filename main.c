@@ -9,27 +9,6 @@
 
 #define FRAME_COUNT 222
 
-// Полное отключение кликов и фокуса мыши по окну
-void MakeWindowClickThrough(void) {
-    Display *display = XOpenDisplay(NULL);
-    if (!display) return;
-
-    void *ptr = GetWindowHandle();
-    if (!ptr) {
-        XCloseDisplay(display);
-        return;
-    }
-
-    Window window = *(Window *)ptr;
-
-    // Задаем пустую область ввода — мышь физически "не видит" окно
-    XRectangle rect = {0, 0, 0, 0};
-    XShapeCombineRectangles(display, window, ShapeInput, 0, 0, &rect, 1, ShapeSet, YXBanded);
-
-    XFlush(display);
-    XCloseDisplay(display);
-}
-
 int main(void) {
     // Без рамок, с прозрачным фоном и поверх всех
     SetConfigFlags(FLAG_WINDOW_UNDECORATED | FLAG_WINDOW_TRANSPARENT | FLAG_WINDOW_TOPMOST);
@@ -90,4 +69,24 @@ int main(void) {
 
     CloseWindow();
     return 0;
+}
+// Полное отключение кликов и фокуса мыши по окну
+void MakeWindowClickThrough(void) {
+    Display *display = XOpenDisplay(NULL);
+    if (!display) return;
+
+    void *ptr = GetWindowHandle();
+    if (!ptr) {
+        XCloseDisplay(display);
+        return;
+    }
+
+    Window window = *(Window *)ptr;
+
+    // Задаем пустую область ввода — мышь физически "не видит" окно
+    XRectangle rect = {0, 0, 0, 0};
+    XShapeCombineRectangles(display, window, ShapeInput, 0, 0, &rect, 1, ShapeSet, YXBanded);
+
+    XFlush(display);
+    XCloseDisplay(display);
 }
