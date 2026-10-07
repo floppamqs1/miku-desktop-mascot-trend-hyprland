@@ -52,7 +52,7 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
  git clone https://github.com/floppamqs1/miku-desktop-mascot-trend-hyprland.git
  ```
 ```bash
- cd miku-desktop-mascot-trend
+ cd miku-desktop-mascot-trend-hyprland
   ```
 
  * Also, you need add this on .config/hypr/config/windowrules.lua
