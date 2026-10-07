@@ -2,7 +2,7 @@
 
 
 
-# Hatsune Miku Desktop Mascot / Настольный маскот Хацунэ Мику
+# Fork Hatsune Miku Desktop Mascot for hyprland / Форк Настольный маскот Хацунэ Мику на хупрленд
 
 
 > *Та самая Мику из тренда «слышь ты залип, опа опа оп»!*
@@ -16,18 +16,8 @@
 
 Совместимость
 
- * 100% работает на: KDE Plasma
-   
-  Скорее всего, будет работать на:
+ * Форк 100% работает на: Hyprland
  
-   * GNOME
-     
-   * XFCE
-     
-   * Hyprland, Niri, Sway, i3
-     
-(Если честно, за пределами KDE Plasma я не тестировал, так что тут как повезёт)
-
 Зависимости
 
 * Для Arch-подобных дистрибутивов:
@@ -40,21 +30,21 @@ sudo pacman -S gcc raylib libx11
 sudo apt update
 ```
 ```bash
-sudo apt install build-essential libraylib-dev libx11-dev
+sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 
 ```
 * Сборка и запуск
 
  * Клонируйте репозиторий и перейдите в папку:
   ```bash
-  git clone https://github.com/CBEKY6/miku-desktop-mascot-trend.git
+  git clone https://github.com/floppamqs1/miku-desktop-mascot-trend-hyprland.git
    ```
    ```bash
    cd miku-desktop-mascot-trend
    ```
    * Скомпилируйте:
    ```bash
-   gcc main.c -o miku -lraylib -lX11 -lGL -lm -lpthread -ldl -lrt
+   gcc main.c -o miku -lraylib -lX11 -lXext -lGL -lm -lpthread -ldl -lrt
    ```
 
 

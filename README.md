@@ -2,7 +2,7 @@
 
 
 
-# Hatsune Miku Desktop Mascot / Настольный маскот Хацунэ Мику
+# Fork Hatsune Miku Desktop Mascot for hyprland / Форк Настольный маскот Хацунэ Мику на хупрленд
 
 
 > That same Miku from the "slysh ty zalip, opa opa op" trend!
@@ -21,16 +21,7 @@ Desktop mascot for Linux written in pure C using the Raylib library. No Wallpape
 
 ### Compatibility
 
-* 100% Working on: KDE Plasma
-  
-  Likely to work on:
-  
-  * GNOME
-  * XFCE
-  * Hyprland, Niri, Sway, i3
-    
-
-(To be honest, I haven't tested this outside of KDE Plasma, so good luck!)*
+* Fork 100% Working on: Hyprland
 
 
 ### Dependencies
@@ -49,7 +40,7 @@ sudo apt update
 ```
 ```bash
 
-sudo apt install build-essential libraylib-dev libx11-dev
+sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 ```
 
 
