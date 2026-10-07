@@ -64,9 +64,10 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
    ./miku
   ```
 
+
 ### Note
 
-  * Direct clicks on Miku are disabled. To close the mascot, run the following command in your terminal:
+* Direct clicks on Miku are disabled. To close the mascot, run:
   ```bash
   pkill -9 -i miku
   ```
