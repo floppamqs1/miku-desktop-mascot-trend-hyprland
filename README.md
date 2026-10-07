@@ -49,7 +49,7 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
  * Clone the repository and enter the directory:
    
 ```bash
- git clone https://github.com/CBEKY6/miku-desktop-mascot-trend.git
+ git clone https://github.com/floppamqs1/miku-desktop-mascot-trend-hyprland.git
  ```
 ```bash
  cd miku-desktop-mascot-trend
@@ -62,4 +62,11 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
  * Run the mascot:
    ```bash
    ./miku
-```
+  ```
+
+### Note
+
+  * Direct clicks on Miku are disabled. To close the mascot, run the following command in your terminal:
+  ```bash
+  pkill -9 -i miku
+  ```

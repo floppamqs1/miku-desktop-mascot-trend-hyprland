@@ -52,3 +52,10 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
   ```bash
    ./miku
    ```
+
+### Примечание
+
+ * На Мику не работают клики. Чтобы её закрыть, выполните в терминале:
+  ```bash
+  pkill -9 -i miku
+  ```
