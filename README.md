@@ -63,7 +63,7 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
     border_size = 0,
     no_shadow = true,
     no_blur = true,
-    pin = true, -- Показывать на всех рабочих столах
+    pin = true,
     opacity = 1,
     no_initial_focus = true,
     opacity = "1.0 1.0 override",
