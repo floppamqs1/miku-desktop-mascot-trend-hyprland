@@ -73,7 +73,7 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
 
  * Compile
 ```bash
-   gcc main.c -o miku -lraylib -lX11 -lGL -lm -lpthread -ldl -lrt
+   gcc main.c -o miku -lraylib -lX11 -lGL -lm -lpthread -ldl -lrt -lXext
    ```
  * Run the mascot:
 ```bash

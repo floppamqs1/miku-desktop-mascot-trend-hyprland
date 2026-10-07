@@ -44,7 +44,7 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
    ```
   * Скомпилируйте:
 ```bash
-   gcc main.c -o miku -lraylib -lX11 -lXext -lGL -lm -lpthread -ldl -lrt
+   gcc main.c -o miku -lraylib -lX11 -lXext -lGL -lm -lpthread -ldl -lrt -lXext
    ```
   * Так же, пропишите в .config/hypr/config/windowrules.lua следующее:
 ```bash
