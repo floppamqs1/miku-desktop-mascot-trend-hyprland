@@ -8,7 +8,7 @@
 #undef Font
 
 #define FRAME_COUNT 222
-
+void MakeWindowClickThrough(void); //Без прототипа не компилируется, т.к. функция объявлена ниже мейна
 int main(void) {
     // Без рамок, с прозрачным фоном и поверх всех
     SetConfigFlags(FLAG_WINDOW_UNDECORATED | FLAG_WINDOW_TRANSPARENT | FLAG_WINDOW_TOPMOST);
