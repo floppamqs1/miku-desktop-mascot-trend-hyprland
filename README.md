@@ -21,7 +21,7 @@ Desktop mascot for Linux written in pure C using the Raylib library. No Wallpape
 
 ### Compatibility
 
-* Fork 100% Working on: Hyprland
+* Fork 100% Working on: Hyprland on Wayland
 
 
 ### Dependencies
