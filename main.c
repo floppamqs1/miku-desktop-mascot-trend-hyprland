@@ -15,7 +15,6 @@ int main(void) {
 
     InitWindow(800, 800, "Hatsune Miku");
     SetExitKey(KEY_NULL);
-    SetWindowPosition(1120, 433);
     SetTargetFPS(80);
 
     // Включаем 100% пролет кликов

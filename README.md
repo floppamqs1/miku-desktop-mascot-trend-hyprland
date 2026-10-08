@@ -72,6 +72,7 @@ sudo apt install build-essential libraylib-dev libx11-dev libxext-dev
     no_initial_focus = true,
     opacity = "1.0 1.0 override",
     no_focus = true,
+    move = { 1120, 433 },
   })
   ```
 
